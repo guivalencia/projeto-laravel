@@ -33,7 +33,7 @@
                                     <form id="form_{{$cliente->id}}" method="POST" action="{{ route('cliente.destroy' , ['cliente' => $cliente->id]) }}">
                                         @method('DELETE')
                                         @csrf
-                                        <a href="#" onclick="document.getElementById('form_{{$produto->id}}').submit()">Excluir</a>
+                                        <a href="#" onclick="document.getElementById('form_{{$cliente->id}}').submit()">Excluir</a>
                                     </form>
                                 </td>
                                 <td><a href="{{ route('cliente.edit', ['cliente' => $cliente->id]) }}">Editar</a></td>
